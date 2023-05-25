@@ -1,6 +1,17 @@
 # LITEFY
 
-Let It Theme Evince For You.
+------------------------------------------------
+
+  _      _____ _______ ______ ________     __
+ | |    |_   _|__   __|  ____|  ____\ \   / /
+ | |      | |    | |  | |__  | |__   \ \_/ / 
+ | |      | |    | |  |  __| |  __|   \   /  
+ | |____ _| |_   | |  | |____| |       | |   
+ |______|_____|  |_|  |______|_|       |_|   
+
+	Let It Theme Evince For You
+
+------------------------------------------------
 
 If you are not sudo user, you may experience troubles with Document Viewer (Evince) when you try to change the theme. This script will help you to "change"/"fix" the theme of Evince applying an installed theme.
 
