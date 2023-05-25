@@ -13,13 +13,14 @@ current_theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
 echo -e "------------------------------------------------\n\n"
 echo -e "Tema GTK atual:\e[1m\e[32m $current_theme. \e[0m \n"
 
+available_themes="/usr/share/themes"
 # Check if the directory exists
 if [ -d "$available_themes" ]; then
     # List the folder names
     echo -e "Temas disponíveis \e[90m(/usr/share/themes:) \e[1m\e[32m"
     ls -1 "$available_themes"
 else
-    echo -e "\e[0mDiretório não encontrado: $available_themes"
+    echo -e "\e[0mDiretório dos temas não encontrado: $available_themes"
 fi
 
     echo -e "Escolha o tema que deseja aplicar ao Document Viewer.\n"
