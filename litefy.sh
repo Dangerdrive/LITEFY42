@@ -7,15 +7,36 @@
 
 # Escolha um dos temas que já vem instalados nos PCs da 42SP para funcionar.
 
-
-# Define the GTK theme variable to be applied
-gtk_theme="Adwaita-dark"
-
 # Retrieve the current GTK theme
 current_theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
 
 echo -e "------------------------------------------------\n\n"
 echo -e "Tema GTK atual:\e[1m\e[32m $current_theme. \e[0m \n"
+
+# Check if the directory exists
+if [ -d "$available_themes" ]; then
+    # List the folder names
+    echo -e "Temas disponíveis \e[90m(/usr/share/themes:) \e[1m\e[32m"
+    ls -1 "$available_themes"
+else
+    echo -e "\e[0mDiretório não encontrado: $available_themes"
+fi
+
+    echo -e "Escolha o tema que deseja aplicar ao Document Viewer.\n"
+# Define the GTK theme variable to be applied
+gtk_theme="$1"  # Get the theme as an argument to the script
+
+# Check if the theme is provided
+if [ -z "$gtk_theme" ]; then
+    # Prompt the user to enter the theme
+    echo "Digite o tema desejado ou pressione enter:"
+    read gtk_theme
+
+    # Use default theme if no theme is provided
+    if [ -z "$gtk_theme" ]; then
+        gtk_theme="Adwaita-dark"
+    fi
+fi
 
 echo -e "O tema\e[1m\e[32m \"$gtk_theme\" \e[0mserá \"aplicado\" para o Document Viewer.\n"
 echo -e "Se quiser aplicar outro tema, modifique a variável \"gtk_theme\" deste script.\n"
@@ -24,14 +45,7 @@ echo -e "Se quiser aplicar outro tema, modifique a variável \"gtk_theme\" deste
 # Os temas disponíveis contidos em /usr/share/themes são:
 available_themes="/usr/share/themes"
 
-# Check if the directory exists
-if [ -d "$available_themes" ]; then
-    # List the folder names
-    echo -e "Temas disponíveis \e[90m(/usr/share/themes:) \e[1m\e[32m"
-    ls -1 "$available_themes"
-else
-    echo "\e[0mDiretório não encontrado: $available_themes"
-fi
+
 
 # Define the application to apply the theme
 application="evince"
