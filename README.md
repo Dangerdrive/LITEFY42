@@ -2,11 +2,11 @@
 
 Let It Theme Evince For You.
 
-If you are not sudo user, you may experience troubles with Document Viewer (Evince) when you try to change the theme. This script will help you to change the theme of Evince for a theme.
+If you are not sudo user, you may experience troubles with Document Viewer (Evince) when you try to change the theme. This script will help you to "change"/"fix" the theme of Evince applying an installed theme.
 
 ## Usage
 
-Just run it:
+Just run the command below in your terminal:
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Dangerdrive/litefy/main/litefy.sh)"
@@ -17,56 +17,27 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Dangerdrive/litefy/main/
 ```bash
 Tema GTK atual: 'Graphite-Dark-nord'.  
 
-O tema "Adwaita-dark" será "aplicado" para o Document Viewer.
-
-Se quiser aplicar outro tema, modifique a variável "gtk_theme" deste script.
-
 Temas disponíveis (/usr/share/themes:) 
-Adwaita
+"Adwaita
 Adwaita-dark
 Default
 Emacs
 HighContrast
 Raleigh
 Yaru
-Yaru-dark
+Yaru-dark"
 
-Arquivo evince.desktop foi criado em ~/.local/share/applications/
-Associação já existe: application/pdf -> evince.desktop
-Permissões do arquivo evince.desktop foram redefinidas.
+Escolha o tema desejado ou pressione enter para aplicar o padrão (Adwaita-dark)
+
+
+O tema "Adwaita-dark" será "aplicado" para o Document Viewer.
+
+
+
+(- Script evince.desktop foi criado em ~/.local/share/applications/
+- evince.desktop já é o leitor padrão de .pdf
+- Permissões do arquivo evince.desktop foram redefinidas.)
+
+Tudo Pronto! =')'
+
 ```
-
-## Setting another theme
-
-As default, LITEFY will set Adwaita-dark theme for Document Viewer. 
-
-```bash
-
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-<!-- bash -c "$(curl -fsSL https://raw.github.com/Dangerdrive/litefy/master/litify.sh)
-
-https://rawgithub.com/Dangerdrive/litefy/blob/main/litefy.sh -->
