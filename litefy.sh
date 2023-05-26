@@ -19,7 +19,7 @@ echo -e "  _      _____ _______ ______ ________     __
  |______|_____|  |_|  |______|_|       |_|   "
 echo -e "\n\tLet It Theme Evince For You\n"
 echo -e "------------------------------------------------\n"
-echo -e "Vamos aplicar um tema do sistema ao Document Viewer(Evince).  =)\n\n"
+echo -e "Vamos aplicar um tema root ao Document Viewer(Evince).  =)\n\n"
 echo -e "Tema GTK atual:\e[1m\e[32m $current_theme. \e[0m \n"
 
 available_themes="/usr/share/themes"

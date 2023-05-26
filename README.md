@@ -2,7 +2,7 @@
 
 Let It Theme Evince For You.
 
-If you are not sudo user, you may experience troubles with Document Viewer (Evince) when you try to change the theme. This script will help you to "change"/"fix" the theme of Evince applying an installed theme.
+If you are not sudo user, you may experience troubles with Document Viewer (Evince) when you try apply a user-installed the theme. This script will help you to "change"/"fix" the theme of Evince creating a script that applies a root theme, and setting it as default application for .pdf files.
 
 ## Usage
 
