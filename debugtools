@@ -1,0 +1,19 @@
+nautilus $HOME/.config/
+mimeapps.list
+
+
+#unistall commands
+
+file_path="$HOME/.config/mimeapps.list"
+rm -rf ~/.local/share/applications/evince.desktop
+if [ -f "$file_path" ]; then
+    # Remove the line from the file if it exists
+    if grep -q "application/pdf=evince.desktop" "$file_path"; then
+        sed -i '/application\/pdf=evince.desktop/d' "$file_path"
+        echo -e "\e[90m- Associação removida: application/pdf -> evince.desktop\e[0m"
+    else
+        echo -e "\e[90m- Associação application/pdf -> evince.desktop não encontrada\e[0m"
+    fi
+else
+    echo -e "- Arquivo mimeapps.list não encontrado: $file_path ='/"
+fi

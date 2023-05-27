@@ -3,7 +3,7 @@
 # Create a script that sets the theme for evince (Document Viewer)
 
 # Vamos criar um script que abrirá o Document Viewer com um tema aplicado (evince.desktop).
-# Depois vamos colocar esse script como o leitor padrão de pdf modificando o mimeapp.list.
+# Depois vamos colocar esse script como o leitor padrão de pdf, modificando o mimeapp.list.
 
 # Escolha um dos temas que já vem instalados nos PCs da 42SP para funcionar.
 
@@ -109,3 +109,5 @@ echo -e "\e[90m- Permissões do arquivo evince.desktop foram redefinidas.\e[0m"
 echo -e "\nTudo Pronto! =)"
 
 echo -e "\n\n------------------------------------------------\n"
+
+
